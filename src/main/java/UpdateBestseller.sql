@@ -32,10 +32,6 @@ begin
     select book_id from books
     where bestseller is null
     into notrented;
-    update books
-    set books.bestseller = false
-    where books.book_id = notrented;
-    commit;
 end $$
 delimiter ;
 
