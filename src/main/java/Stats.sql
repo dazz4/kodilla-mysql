@@ -31,4 +31,4 @@ create event UPDATE_STATS_EVENT
     call UpdateStats();
 
 show processlist;
-#drop event UPDATE_STATS_EVENT;
+drop event UPDATE_STATS_EVENT;
